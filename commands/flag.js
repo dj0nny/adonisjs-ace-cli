@@ -11,11 +11,11 @@ class Flag extends Command {
     }
 
     static get description() {
-        return 'Check'
+        return 'Check if you have typed a command with flag'
     }
 
     async handle(args, {check}) {
-        console.log("You used this command ${check: ? 'with' : 'without'} flag")
+        console.log(`You used this command ${check ? 'with' : 'without'} flag`)
     }
 }
 
