@@ -1,10 +1,10 @@
 {
   "name": "adonisjs-ace-cli",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "cli.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node cli.js"
   },
   "dependencies": {
     "@adonisjs/ace": "^5.0.8"
