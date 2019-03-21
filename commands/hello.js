@@ -15,3 +15,5 @@ class Hello extends Command {
 		console.log('Hello dude!');
 	}
 }
+
+module.exports = Hello
