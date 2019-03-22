@@ -19,4 +19,4 @@ class Name extends Command {
     }
 }
 
-module.export = Name
+module.exports = Name
