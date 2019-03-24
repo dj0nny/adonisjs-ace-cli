@@ -11,6 +11,7 @@ ace.addCommand(require('./commands/choice'));
 ace.addCommand(require('./commands/icons'));
 ace.addCommand(require('./commands/load'));
 ace.addCommand(require('./commands/tasks'));
+ace.addCommand(require('./commands/tasks-parallel'));
 
 ace.wireUpWithCommander();
 ace.invoke();
