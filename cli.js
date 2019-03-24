@@ -9,6 +9,7 @@ ace.addCommand(require('./commands/name'));
 ace.addCommand(require('./commands/ask'));
 ace.addCommand(require('./commands/choice'));
 ace.addCommand(require('./commands/icons'));
+ace.addCommand(require('./commands/load'));
 
 ace.wireUpWithCommander();
 ace.invoke();
