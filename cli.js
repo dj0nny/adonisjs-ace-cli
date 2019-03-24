@@ -7,6 +7,7 @@ ace.addCommand(require('./commands/package'));
 ace.addCommand(require('./commands/flag'));
 ace.addCommand(require('./commands/name'));
 ace.addCommand(require('./commands/ask'));
+ace.addCommand(require('./commands/choice'));
 
 ace.wireUpWithCommander();
 ace.invoke();
