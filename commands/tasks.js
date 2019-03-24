@@ -56,7 +56,7 @@ class Tasks extends Command {
             }
         ])
 
-        tasks.run()
+        await tasks.run()
     
     }
 
