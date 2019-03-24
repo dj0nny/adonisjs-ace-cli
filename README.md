@@ -31,16 +31,25 @@ Type `npm run start` or `yarn run start` for running the CLI: it'll be show the 
 
 ### List of commands
 
-Command name  | Usage                                                          |   Flags       | Arguments
-------------- | ---------------------------------------------------------------| ------------- | ---------
-Hello         | _npm run start hello_  or _yarn run start hello_               | None          | None
-Package       | _npm run start package_ or _yarn run start package_            | None          | None
-Flag          | _npm run start flag_ or _yarn run start flag_                  | -c, --check   | None
-Name          | _npm run start name yourName_ or _yarn run start name yourName_| None          | yourName: __string__
+Command name  | Usage                                                            |   Flags       | Arguments
+------------- | -----------------------------------------------------------------| ------------- | ---------
+hello         | _npm run start hello_  or _yarn run start hello_                 | None          | None
+package       | _npm run start package_ or _yarn run start package_              | None          | None
+flag          | _npm run start flag_ or _yarn run start flag_                    | -c, --check   | None
+name          | _npm run start name yourName_ or _yarn run start name yourName_  | None          | yourName: __string__
+ask           | _npm run start ask_ or _yarn run start ask_                      | None          | None
+choice        | _npm run start choice_ or _yarn run start choice_                | None          | None
+icons         | _npm run start icons_ or _yarn run start icons_                  | None          | None
+tasks         | _npm run start tasks_ or _yarn run start tasks_                  | None          | None
+tasks:parallel| _npm run start tasks:parallel_ or _yarn run start tasks:parallel_| None          | None
+
 
 ## Built with ❤ using:
 
 * [Adonis Ace](https://github.com/adonisjs/ace) - A Node.js framework for creating CLI
+* [Ora](https://github.com/sindresorhus/ora) - Elegant terminal spinner
+* [Listr](https://github.com/SamVerschueren/listr) - Terminal task list
+
 
 ## Contributing
 
