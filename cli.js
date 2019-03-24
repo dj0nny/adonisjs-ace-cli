@@ -10,6 +10,7 @@ ace.addCommand(require('./commands/ask'));
 ace.addCommand(require('./commands/choice'));
 ace.addCommand(require('./commands/icons'));
 ace.addCommand(require('./commands/load'));
+ace.addCommand(require('./commands/tasks'));
 
 ace.wireUpWithCommander();
 ace.invoke();
