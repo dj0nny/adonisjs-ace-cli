@@ -43,6 +43,65 @@ icons         | _npm run start icons_ or _yarn run start icons_                 
 tasks         | _npm run start tasks_ or _yarn run start tasks_                  | None          | None
 tasks:parallel| _npm run start tasks:parallel_ or _yarn run start tasks:parallel_| None          | None
 
+## Overview
+
+### cli.js
+
+The CLI is configured within this flle
+
+```javascript
+'use strict';
+
+const ace = require('@adonisjs/ace');
+
+ace.addCommand(require('./commands/hello'));
+ace.addCommand(require('./commands/package'));
+ace.addCommand(require('./commands/flag'));
+ace.addCommand(require('./commands/name'));
+ace.addCommand(require('./commands/ask'));
+ace.addCommand(require('./commands/choice'));
+ace.addCommand(require('./commands/icons'));
+ace.addCommand(require('./commands/load'));
+ace.addCommand(require('./commands/tasks'));
+ace.addCommand(require('./commands/tasks-parallel'));
+
+ace.wireUpWithCommander();
+ace.invoke();
+```
+
+* `ace.addCommand(require('...'));`: is the function to import a new command within the CLI
+* `ace.wireUpWithCommander();` and `ace.invoke();`: are functions for initialzing the CLI
+
+### Define a new command
+
+The definition of a new command for the CLI requires these three functions
+
+```javascript
+'use strict';
+
+const { Command } = require('@adonisjs/ace');
+
+class Hello extends Command {
+	static get signature() {
+		return 'hello';
+	}
+
+	static get description() {
+		return 'Say hello to the user';
+	}
+
+	async handle() {
+		console.log('Hello dude!');
+	}
+}
+
+module.exports = Hello
+```
+__NB__: for this project it was used `ES6`
+
+* __signature()__: is the name of the command
+* __description()__: is the description of the command that will appear, for example, in the help text
+* __handle()__: is the implementation of the command
 
 ## Built with ❤ using:
 
